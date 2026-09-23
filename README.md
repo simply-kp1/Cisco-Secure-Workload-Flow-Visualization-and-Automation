@@ -11,7 +11,7 @@ Everything runs in your browser. Nothing is uploaded anywhere.
 
 ![Status](https://img.shields.io/badge/tests-130%20passing-brightgreen)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6)
-![License](https://img.shields.io/badge/license-none%20yet-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ---
 
@@ -447,9 +447,19 @@ any real environment.
 
 ### Licence
 
-No licence file is present yet, which means default copyright applies — all rights reserved. If you
-intend others to use, modify or distribute this, add a licence (MIT and Apache-2.0 are the usual
-choices).
+Released under the [MIT Licence](LICENSE) — you are free to use, modify, distribute and sell this
+software, including commercially, provided the copyright notice and licence text are retained. It
+comes with no warranty.
+
+**Dependencies.** All 347 packages in the resolved tree are permissively licensed — predominantly
+MIT, with ISC, Apache-2.0, BSD-2/3-Clause, Zlib and BlueOak. Nothing that ships in the built output
+is copyleft.
+
+Two build-time-only exceptions are worth naming for anyone doing licence review:
+
+- `lightningcss` (MPL-2.0) — a CSS minifier invoked by the build. Weak, file-level copyleft that
+  applies only to modifications of its own source; it is not present in `dist/`.
+- `caniuse-lite` (CC-BY-4.0) — browser-support **data** used by Autoprefixer at build time.
 
 ### A note on privacy
 

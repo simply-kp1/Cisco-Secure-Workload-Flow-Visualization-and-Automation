@@ -2,6 +2,27 @@
   "name": "secure-workload-policy-visualiser",
   "private": true,
   "version": "1.0.0",
+  "description": "Interactive 3D visualisation and change-impact analysis for network microsegmentation policy.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simply-kp1/Cisco-Secure-Workload-Flow-Visualization-and-Automation.git"
+  },
+  "homepage": "https://github.com/simply-kp1/Cisco-Secure-Workload-Flow-Visualization-and-Automation#readme",
+  "bugs": {
+    "url": "https://github.com/simply-kp1/Cisco-Secure-Workload-Flow-Visualization-and-Automation/issues"
+  },
+  "keywords": [
+    "network-security",
+    "microsegmentation",
+    "policy-analysis",
+    "network-topology",
+    "visualization",
+    "change-impact-analysis",
+    "cisco-secure-workload",
+    "threejs",
+    "react"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
