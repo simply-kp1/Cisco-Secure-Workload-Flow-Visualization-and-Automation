@@ -1,0 +1,44 @@
+# Dependencies and build output
+node_modules
+dist
+dist-ssr
+coverage
+*.tsbuildinfo
+
+# Secrets and local configuration
+# Nothing in this project needs credentials today, but these patterns stop one
+# being committed by accident if that ever changes.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+.npmrc
+.netrc
+secrets.json
+credentials.json
+
+# Real policy exports. The committed sample is synthetic; anything dropped in
+# here from a live environment must never leave the machine.
+/private-data/
+*.private.json
+
+# Logs and local scratch files
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.local
+
+# Editors and OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

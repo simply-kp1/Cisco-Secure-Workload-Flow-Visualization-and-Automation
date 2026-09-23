@@ -1,0 +1,2311 @@
+{
+  "export_metadata": {
+    "product": "Cisco Secure Workload",
+    "export_type": "synthetic_sample",
+    "server_count": 50,
+    "rule_count": 149,
+    "notes": "Synthetic test data only. Not an exact Cisco Secure Workload API export schema."
+  },
+  "servers": [
+    {
+      "id": "srv-001",
+      "name": "web-srv-01",
+      "ip": "10.10.10.11",
+      "role": "WEB",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-002",
+      "name": "web-srv-02",
+      "ip": "10.10.10.12",
+      "role": "WEB",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-003",
+      "name": "web-srv-03",
+      "ip": "10.10.10.13",
+      "role": "WEB",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-004",
+      "name": "web-srv-04",
+      "ip": "10.10.10.14",
+      "role": "WEB",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-005",
+      "name": "web-srv-05",
+      "ip": "10.10.10.15",
+      "role": "WEB",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-006",
+      "name": "web-srv-06",
+      "ip": "10.10.10.16",
+      "role": "WEB",
+      "environment": "DEV",
+      "os": "RHEL 9",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-007",
+      "name": "web-srv-07",
+      "ip": "10.10.10.17",
+      "role": "WEB",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-008",
+      "name": "web-srv-08",
+      "ip": "10.10.10.18",
+      "role": "WEB",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-009",
+      "name": "app-srv-01",
+      "ip": "10.10.20.11",
+      "role": "APP",
+      "environment": "PROD",
+      "os": "Windows Server 2022",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-010",
+      "name": "app-srv-02",
+      "ip": "10.10.20.12",
+      "role": "APP",
+      "environment": "PROD",
+      "os": "Windows Server 2022",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-011",
+      "name": "app-srv-03",
+      "ip": "10.10.20.13",
+      "role": "APP",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-012",
+      "name": "app-srv-04",
+      "ip": "10.10.20.14",
+      "role": "APP",
+      "environment": "PROD",
+      "os": "Windows Server 2022",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-013",
+      "name": "app-srv-05",
+      "ip": "10.10.20.15",
+      "role": "APP",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-014",
+      "name": "app-srv-06",
+      "ip": "10.10.20.16",
+      "role": "APP",
+      "environment": "UAT",
+      "os": "Ubuntu 22.04",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-015",
+      "name": "app-srv-07",
+      "ip": "10.10.20.17",
+      "role": "APP",
+      "environment": "DEV",
+      "os": "Windows Server 2022",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-016",
+      "name": "app-srv-08",
+      "ip": "10.10.20.18",
+      "role": "APP",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-017",
+      "name": "app-srv-09",
+      "ip": "10.10.20.19",
+      "role": "APP",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-018",
+      "name": "app-srv-10",
+      "ip": "10.10.20.20",
+      "role": "APP",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-019",
+      "name": "db-srv-01",
+      "ip": "10.10.30.11",
+      "role": "DB",
+      "environment": "UAT",
+      "os": "Windows Server 2022",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-020",
+      "name": "db-srv-02",
+      "ip": "10.10.30.12",
+      "role": "DB",
+      "environment": "PROD",
+      "os": "Windows Server 2022",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-021",
+      "name": "db-srv-03",
+      "ip": "10.10.30.13",
+      "role": "DB",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-022",
+      "name": "db-srv-04",
+      "ip": "10.10.30.14",
+      "role": "DB",
+      "environment": "DEV",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-023",
+      "name": "db-srv-05",
+      "ip": "10.10.30.15",
+      "role": "DB",
+      "environment": "UAT",
+      "os": "Windows Server 2019",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-024",
+      "name": "db-srv-06",
+      "ip": "10.10.30.16",
+      "role": "DB",
+      "environment": "DEV",
+      "os": "RHEL 9",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-025",
+      "name": "db-srv-07",
+      "ip": "10.10.30.17",
+      "role": "DB",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-026",
+      "name": "db-srv-08",
+      "ip": "10.10.30.18",
+      "role": "DB",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-027",
+      "name": "api-srv-01",
+      "ip": "10.10.40.11",
+      "role": "API",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-028",
+      "name": "api-srv-02",
+      "ip": "10.10.40.12",
+      "role": "API",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-029",
+      "name": "api-srv-03",
+      "ip": "10.10.40.13",
+      "role": "API",
+      "environment": "UAT",
+      "os": "RHEL 9",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-030",
+      "name": "api-srv-04",
+      "ip": "10.10.40.14",
+      "role": "API",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-031",
+      "name": "api-srv-05",
+      "ip": "10.10.40.15",
+      "role": "API",
+      "environment": "DEV",
+      "os": "Windows Server 2019",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-032",
+      "name": "api-srv-06",
+      "ip": "10.10.40.16",
+      "role": "API",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-033",
+      "name": "api-srv-07",
+      "ip": "10.10.40.17",
+      "role": "API",
+      "environment": "DEV",
+      "os": "Windows Server 2019",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-034",
+      "name": "file-srv-01",
+      "ip": "10.10.50.11",
+      "role": "FILE",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-035",
+      "name": "file-srv-02",
+      "ip": "10.10.50.12",
+      "role": "FILE",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-036",
+      "name": "file-srv-03",
+      "ip": "10.10.50.13",
+      "role": "FILE",
+      "environment": "UAT",
+      "os": "Windows Server 2019",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-037",
+      "name": "file-srv-04",
+      "ip": "10.10.50.14",
+      "role": "FILE",
+      "environment": "DEV",
+      "os": "Windows Server 2022",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-038",
+      "name": "file-srv-05",
+      "ip": "10.10.50.15",
+      "role": "FILE",
+      "environment": "PROD",
+      "os": "Windows Server 2022",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-039",
+      "name": "mon-srv-01",
+      "ip": "10.10.60.11",
+      "role": "MON",
+      "environment": "PROD",
+      "os": "Windows Server 2022",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-040",
+      "name": "mon-srv-02",
+      "ip": "10.10.60.12",
+      "role": "MON",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-041",
+      "name": "mon-srv-03",
+      "ip": "10.10.60.13",
+      "role": "MON",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-042",
+      "name": "mon-srv-04",
+      "ip": "10.10.60.14",
+      "role": "MON",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-043",
+      "name": "mon-srv-05",
+      "ip": "10.10.60.15",
+      "role": "MON",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-044",
+      "name": "mgmt-srv-01",
+      "ip": "10.10.70.11",
+      "role": "MGMT",
+      "environment": "DEV",
+      "os": "Windows Server 2022",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-045",
+      "name": "mgmt-srv-02",
+      "ip": "10.10.70.12",
+      "role": "MGMT",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC2"
+    },
+    {
+      "id": "srv-046",
+      "name": "mgmt-srv-03",
+      "ip": "10.10.70.13",
+      "role": "MGMT",
+      "environment": "PROD",
+      "os": "RHEL 9",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-047",
+      "name": "mgmt-srv-04",
+      "ip": "10.10.70.14",
+      "role": "MGMT",
+      "environment": "PROD",
+      "os": "Ubuntu 22.04",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-048",
+      "name": "mgmt-srv-05",
+      "ip": "10.10.70.15",
+      "role": "MGMT",
+      "environment": "UAT",
+      "os": "Ubuntu 22.04",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-049",
+      "name": "mgmt-srv-06",
+      "ip": "10.10.70.16",
+      "role": "MGMT",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC1"
+    },
+    {
+      "id": "srv-050",
+      "name": "mgmt-srv-07",
+      "ip": "10.10.70.17",
+      "role": "MGMT",
+      "environment": "PROD",
+      "os": "Windows Server 2019",
+      "zone": "DC1"
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule-001",
+      "name": "web-srv-01-to-app-srv-09",
+      "consumer": "web-srv-01",
+      "provider": "app-srv-09",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        8443
+      ],
+      "action": "ALLOW",
+      "description": "Web tier may connect to assigned application server."
+    },
+    {
+      "id": "rule-002",
+      "name": "web-srv-02-to-app-srv-04",
+      "consumer": "web-srv-02",
+      "provider": "app-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        8443
+      ],
+      "action": "ALLOW",
+      "description": "Web tier may connect to assigned application server."
+    },
+    {
+      "id": "rule-003",
+      "name": "web-srv-03-to-app-srv-05",
+      "consumer": "web-srv-03",
+      "provider": "app-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        8443
+      ],
+      "action": "ALLOW",
+      "description": "Web tier may connect to assigned application server."
+    },
+    {
+      "id": "rule-004",
+      "name": "web-srv-04-to-app-srv-07",
+      "consumer": "web-srv-04",
+      "provider": "app-srv-07",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        8443
+      ],
+      "action": "ALLOW",
+      "description": "Web tier may connect to assigned application server."
+    },
+    {
+      "id": "rule-005",
+      "name": "web-srv-05-to-app-srv-06",
+      "consumer": "web-srv-05",
+      "provider": "app-srv-06",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        8443
+      ],
+      "action": "ALLOW",
+      "description": "Web tier may connect to assigned application server."
+    },
+    {
+      "id": "rule-006",
+      "name": "web-srv-06-to-app-srv-08",
+      "consumer": "web-srv-06",
+      "provider": "app-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        8443
+      ],
+      "action": "ALLOW",
+      "description": "Web tier may connect to assigned application server."
+    },
+    {
+      "id": "rule-007",
+      "name": "web-srv-07-to-app-srv-09",
+      "consumer": "web-srv-07",
+      "provider": "app-srv-09",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        8443
+      ],
+      "action": "ALLOW",
+      "description": "Web tier may connect to assigned application server."
+    },
+    {
+      "id": "rule-008",
+      "name": "web-srv-08-to-app-srv-08",
+      "consumer": "web-srv-08",
+      "provider": "app-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        8443
+      ],
+      "action": "ALLOW",
+      "description": "Web tier may connect to assigned application server."
+    },
+    {
+      "id": "rule-009",
+      "name": "app-srv-01-to-db-srv-02",
+      "consumer": "app-srv-01",
+      "provider": "db-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        1521
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-010",
+      "name": "app-srv-02-to-db-srv-04",
+      "consumer": "app-srv-02",
+      "provider": "db-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        1433
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-011",
+      "name": "app-srv-03-to-db-srv-06",
+      "consumer": "app-srv-03",
+      "provider": "db-srv-06",
+      "protocol": "TCP",
+      "ports": [
+        1433
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-012",
+      "name": "app-srv-04-to-db-srv-04",
+      "consumer": "app-srv-04",
+      "provider": "db-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        1521
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-013",
+      "name": "app-srv-05-to-db-srv-01",
+      "consumer": "app-srv-05",
+      "provider": "db-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        1433
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-014",
+      "name": "app-srv-06-to-db-srv-01",
+      "consumer": "app-srv-06",
+      "provider": "db-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        1521
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-015",
+      "name": "app-srv-07-to-db-srv-02",
+      "consumer": "app-srv-07",
+      "provider": "db-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        1433
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-016",
+      "name": "app-srv-08-to-db-srv-06",
+      "consumer": "app-srv-08",
+      "provider": "db-srv-06",
+      "protocol": "TCP",
+      "ports": [
+        1433
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-017",
+      "name": "app-srv-09-to-db-srv-04",
+      "consumer": "app-srv-09",
+      "provider": "db-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        3306
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-018",
+      "name": "app-srv-10-to-db-srv-08",
+      "consumer": "app-srv-10",
+      "provider": "db-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        1521
+      ],
+      "action": "ALLOW",
+      "description": "Application server may connect to assigned database service."
+    },
+    {
+      "id": "rule-019",
+      "name": "api-srv-01-to-app-srv-09",
+      "consumer": "api-srv-01",
+      "provider": "app-srv-09",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        9000
+      ],
+      "action": "ALLOW",
+      "description": "API server may call application services."
+    },
+    {
+      "id": "rule-020",
+      "name": "api-srv-02-to-app-srv-03",
+      "consumer": "api-srv-02",
+      "provider": "app-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        9000
+      ],
+      "action": "ALLOW",
+      "description": "API server may call application services."
+    },
+    {
+      "id": "rule-021",
+      "name": "api-srv-03-to-app-srv-10",
+      "consumer": "api-srv-03",
+      "provider": "app-srv-10",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        9000
+      ],
+      "action": "ALLOW",
+      "description": "API server may call application services."
+    },
+    {
+      "id": "rule-022",
+      "name": "api-srv-04-to-app-srv-10",
+      "consumer": "api-srv-04",
+      "provider": "app-srv-10",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        9000
+      ],
+      "action": "ALLOW",
+      "description": "API server may call application services."
+    },
+    {
+      "id": "rule-023",
+      "name": "api-srv-05-to-app-srv-08",
+      "consumer": "api-srv-05",
+      "provider": "app-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        9000
+      ],
+      "action": "ALLOW",
+      "description": "API server may call application services."
+    },
+    {
+      "id": "rule-024",
+      "name": "api-srv-06-to-app-srv-04",
+      "consumer": "api-srv-06",
+      "provider": "app-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        9000
+      ],
+      "action": "ALLOW",
+      "description": "API server may call application services."
+    },
+    {
+      "id": "rule-025",
+      "name": "api-srv-07-to-app-srv-08",
+      "consumer": "api-srv-07",
+      "provider": "app-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        8080,
+        9000
+      ],
+      "action": "ALLOW",
+      "description": "API server may call application services."
+    },
+    {
+      "id": "rule-026",
+      "name": "mon-srv-01-monitor-api-srv-01",
+      "consumer": "mon-srv-01",
+      "provider": "api-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-027",
+      "name": "mon-srv-01-monitor-app-srv-05",
+      "consumer": "mon-srv-01",
+      "provider": "app-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-028",
+      "name": "mon-srv-01-monitor-web-srv-07",
+      "consumer": "mon-srv-01",
+      "provider": "web-srv-07",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-029",
+      "name": "mon-srv-01-monitor-mgmt-srv-05",
+      "consumer": "mon-srv-01",
+      "provider": "mgmt-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-030",
+      "name": "mon-srv-01-monitor-api-srv-02",
+      "consumer": "mon-srv-01",
+      "provider": "api-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-031",
+      "name": "mon-srv-02-monitor-db-srv-05",
+      "consumer": "mon-srv-02",
+      "provider": "db-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-032",
+      "name": "mon-srv-02-monitor-api-srv-02",
+      "consumer": "mon-srv-02",
+      "provider": "api-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-033",
+      "name": "mon-srv-02-monitor-api-srv-01",
+      "consumer": "mon-srv-02",
+      "provider": "api-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-034",
+      "name": "mon-srv-02-monitor-api-srv-04",
+      "consumer": "mon-srv-02",
+      "provider": "api-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-035",
+      "name": "mon-srv-02-monitor-web-srv-04",
+      "consumer": "mon-srv-02",
+      "provider": "web-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-036",
+      "name": "mon-srv-03-monitor-mgmt-srv-06",
+      "consumer": "mon-srv-03",
+      "provider": "mgmt-srv-06",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-037",
+      "name": "mon-srv-03-monitor-mgmt-srv-04",
+      "consumer": "mon-srv-03",
+      "provider": "mgmt-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-038",
+      "name": "mon-srv-03-monitor-web-srv-07",
+      "consumer": "mon-srv-03",
+      "provider": "web-srv-07",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-039",
+      "name": "mon-srv-03-monitor-web-srv-04",
+      "consumer": "mon-srv-03",
+      "provider": "web-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-040",
+      "name": "mon-srv-03-monitor-db-srv-08",
+      "consumer": "mon-srv-03",
+      "provider": "db-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-041",
+      "name": "mon-srv-04-monitor-db-srv-04",
+      "consumer": "mon-srv-04",
+      "provider": "db-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-042",
+      "name": "mon-srv-04-monitor-web-srv-07",
+      "consumer": "mon-srv-04",
+      "provider": "web-srv-07",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-043",
+      "name": "mon-srv-04-monitor-app-srv-08",
+      "consumer": "mon-srv-04",
+      "provider": "app-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-044",
+      "name": "mon-srv-04-monitor-app-srv-05",
+      "consumer": "mon-srv-04",
+      "provider": "app-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-045",
+      "name": "mon-srv-04-monitor-file-srv-02",
+      "consumer": "mon-srv-04",
+      "provider": "file-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-046",
+      "name": "mon-srv-05-monitor-api-srv-03",
+      "consumer": "mon-srv-05",
+      "provider": "api-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-047",
+      "name": "mon-srv-05-monitor-app-srv-01",
+      "consumer": "mon-srv-05",
+      "provider": "app-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-048",
+      "name": "mon-srv-05-monitor-api-srv-02",
+      "consumer": "mon-srv-05",
+      "provider": "api-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-049",
+      "name": "mon-srv-05-monitor-app-srv-04",
+      "consumer": "mon-srv-05",
+      "provider": "app-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-050",
+      "name": "mon-srv-05-monitor-app-srv-10",
+      "consumer": "mon-srv-05",
+      "provider": "app-srv-10",
+      "protocol": "TCP",
+      "ports": [
+        9090,
+        9100
+      ],
+      "action": "ALLOW",
+      "description": "Monitoring access to metrics endpoints."
+    },
+    {
+      "id": "rule-051",
+      "name": "mgmt-srv-01-admin-api-srv-04",
+      "consumer": "mgmt-srv-01",
+      "provider": "api-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-052",
+      "name": "mgmt-srv-01-admin-app-srv-08",
+      "consumer": "mgmt-srv-01",
+      "provider": "app-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-053",
+      "name": "mgmt-srv-01-admin-web-srv-05",
+      "consumer": "mgmt-srv-01",
+      "provider": "web-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-054",
+      "name": "mgmt-srv-01-admin-api-srv-03",
+      "consumer": "mgmt-srv-01",
+      "provider": "api-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-055",
+      "name": "mgmt-srv-02-admin-file-srv-03",
+      "consumer": "mgmt-srv-02",
+      "provider": "file-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-056",
+      "name": "mgmt-srv-02-admin-web-srv-07",
+      "consumer": "mgmt-srv-02",
+      "provider": "web-srv-07",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-057",
+      "name": "mgmt-srv-02-admin-web-srv-04",
+      "consumer": "mgmt-srv-02",
+      "provider": "web-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-058",
+      "name": "mgmt-srv-02-admin-mon-srv-04",
+      "consumer": "mgmt-srv-02",
+      "provider": "mon-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-059",
+      "name": "mgmt-srv-03-admin-file-srv-02",
+      "consumer": "mgmt-srv-03",
+      "provider": "file-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-060",
+      "name": "mgmt-srv-03-admin-web-srv-01",
+      "consumer": "mgmt-srv-03",
+      "provider": "web-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-061",
+      "name": "mgmt-srv-03-admin-web-srv-06",
+      "consumer": "mgmt-srv-03",
+      "provider": "web-srv-06",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-062",
+      "name": "mgmt-srv-03-admin-app-srv-08",
+      "consumer": "mgmt-srv-03",
+      "provider": "app-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-063",
+      "name": "mgmt-srv-04-admin-app-srv-03",
+      "consumer": "mgmt-srv-04",
+      "provider": "app-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-064",
+      "name": "mgmt-srv-04-admin-api-srv-01",
+      "consumer": "mgmt-srv-04",
+      "provider": "api-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-065",
+      "name": "mgmt-srv-04-admin-api-srv-06",
+      "consumer": "mgmt-srv-04",
+      "provider": "api-srv-06",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-066",
+      "name": "mgmt-srv-04-admin-api-srv-05",
+      "consumer": "mgmt-srv-04",
+      "provider": "api-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-067",
+      "name": "mgmt-srv-05-admin-app-srv-06",
+      "consumer": "mgmt-srv-05",
+      "provider": "app-srv-06",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-068",
+      "name": "mgmt-srv-05-admin-db-srv-08",
+      "consumer": "mgmt-srv-05",
+      "provider": "db-srv-08",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-069",
+      "name": "mgmt-srv-05-admin-web-srv-04",
+      "consumer": "mgmt-srv-05",
+      "provider": "web-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-070",
+      "name": "mgmt-srv-05-admin-app-srv-03",
+      "consumer": "mgmt-srv-05",
+      "provider": "app-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-071",
+      "name": "mgmt-srv-06-admin-db-srv-07",
+      "consumer": "mgmt-srv-06",
+      "provider": "db-srv-07",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-072",
+      "name": "mgmt-srv-06-admin-web-srv-01",
+      "consumer": "mgmt-srv-06",
+      "provider": "web-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-073",
+      "name": "mgmt-srv-06-admin-app-srv-09",
+      "consumer": "mgmt-srv-06",
+      "provider": "app-srv-09",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-074",
+      "name": "mgmt-srv-06-admin-api-srv-04",
+      "consumer": "mgmt-srv-06",
+      "provider": "api-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-075",
+      "name": "mgmt-srv-07-admin-db-srv-01",
+      "consumer": "mgmt-srv-07",
+      "provider": "db-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-076",
+      "name": "mgmt-srv-07-admin-api-srv-02",
+      "consumer": "mgmt-srv-07",
+      "provider": "api-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-077",
+      "name": "mgmt-srv-07-admin-file-srv-03",
+      "consumer": "mgmt-srv-07",
+      "provider": "file-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        3389,
+        5985,
+        5986
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-078",
+      "name": "mgmt-srv-07-admin-mon-srv-05",
+      "consumer": "mgmt-srv-07",
+      "provider": "mon-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved management access."
+    },
+    {
+      "id": "rule-079",
+      "name": "mgmt-srv-06-to-file-srv-01",
+      "consumer": "mgmt-srv-06",
+      "provider": "file-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-080",
+      "name": "app-srv-05-to-file-srv-01",
+      "consumer": "app-srv-05",
+      "provider": "file-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-081",
+      "name": "app-srv-04-to-file-srv-01",
+      "consumer": "app-srv-04",
+      "provider": "file-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        445
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-082",
+      "name": "mgmt-srv-07-to-file-srv-01",
+      "consumer": "mgmt-srv-07",
+      "provider": "file-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-083",
+      "name": "mgmt-srv-05-to-file-srv-01",
+      "consumer": "mgmt-srv-05",
+      "provider": "file-srv-01",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-084",
+      "name": "mgmt-srv-07-to-file-srv-02",
+      "consumer": "mgmt-srv-07",
+      "provider": "file-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        445
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-085",
+      "name": "app-srv-06-to-file-srv-02",
+      "consumer": "app-srv-06",
+      "provider": "file-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-086",
+      "name": "app-srv-01-to-file-srv-02",
+      "consumer": "app-srv-01",
+      "provider": "file-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        2049
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-087",
+      "name": "app-srv-09-to-file-srv-02",
+      "consumer": "app-srv-09",
+      "provider": "file-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-088",
+      "name": "app-srv-02-to-file-srv-02",
+      "consumer": "app-srv-02",
+      "provider": "file-srv-02",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-089",
+      "name": "app-srv-02-to-file-srv-03",
+      "consumer": "app-srv-02",
+      "provider": "file-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        2049
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-090",
+      "name": "app-srv-03-to-file-srv-03",
+      "consumer": "app-srv-03",
+      "provider": "file-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-091",
+      "name": "app-srv-07-to-file-srv-03",
+      "consumer": "app-srv-07",
+      "provider": "file-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        445
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-092",
+      "name": "mgmt-srv-01-to-file-srv-03",
+      "consumer": "mgmt-srv-01",
+      "provider": "file-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        2049
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-093",
+      "name": "app-srv-10-to-file-srv-03",
+      "consumer": "app-srv-10",
+      "provider": "file-srv-03",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-094",
+      "name": "app-srv-10-to-file-srv-04",
+      "consumer": "app-srv-10",
+      "provider": "file-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        2049
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-095",
+      "name": "mgmt-srv-05-to-file-srv-04",
+      "consumer": "mgmt-srv-05",
+      "provider": "file-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        445
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-096",
+      "name": "app-srv-06-to-file-srv-04",
+      "consumer": "app-srv-06",
+      "provider": "file-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-097",
+      "name": "mgmt-srv-03-to-file-srv-04",
+      "consumer": "mgmt-srv-03",
+      "provider": "file-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        445
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-098",
+      "name": "app-srv-02-to-file-srv-04",
+      "consumer": "app-srv-02",
+      "provider": "file-srv-04",
+      "protocol": "TCP",
+      "ports": [
+        445
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-099",
+      "name": "app-srv-08-to-file-srv-05",
+      "consumer": "app-srv-08",
+      "provider": "file-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-100",
+      "name": "mgmt-srv-02-to-file-srv-05",
+      "consumer": "mgmt-srv-02",
+      "provider": "file-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-101",
+      "name": "app-srv-05-to-file-srv-05",
+      "consumer": "app-srv-05",
+      "provider": "file-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        22
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-102",
+      "name": "app-srv-03-to-file-srv-05",
+      "consumer": "app-srv-03",
+      "provider": "file-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        445
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-103",
+      "name": "mgmt-srv-07-to-file-srv-05",
+      "consumer": "mgmt-srv-07",
+      "provider": "file-srv-05",
+      "protocol": "TCP",
+      "ports": [
+        445
+      ],
+      "action": "ALLOW",
+      "description": "Approved file service access."
+    },
+    {
+      "id": "rule-104",
+      "name": "deny-web-srv-02-to-db-srv-03",
+      "consumer": "web-srv-02",
+      "provider": "db-srv-03",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct WEB to DB communication."
+    },
+    {
+      "id": "rule-105",
+      "name": "deny-web-srv-05-to-db-srv-05",
+      "consumer": "web-srv-05",
+      "provider": "db-srv-05",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct WEB to DB communication."
+    },
+    {
+      "id": "rule-106",
+      "name": "deny-web-srv-04-to-db-srv-06",
+      "consumer": "web-srv-04",
+      "provider": "db-srv-06",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct WEB to DB communication."
+    },
+    {
+      "id": "rule-107",
+      "name": "deny-web-srv-04-to-mgmt-srv-06",
+      "consumer": "web-srv-04",
+      "provider": "mgmt-srv-06",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct WEB to MGMT communication."
+    },
+    {
+      "id": "rule-108",
+      "name": "deny-web-srv-05-to-mgmt-srv-05",
+      "consumer": "web-srv-05",
+      "provider": "mgmt-srv-05",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct WEB to MGMT communication."
+    },
+    {
+      "id": "rule-109",
+      "name": "deny-web-srv-08-to-mgmt-srv-03",
+      "consumer": "web-srv-08",
+      "provider": "mgmt-srv-03",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct WEB to MGMT communication."
+    },
+    {
+      "id": "rule-110",
+      "name": "deny-api-srv-07-to-db-srv-01",
+      "consumer": "api-srv-07",
+      "provider": "db-srv-01",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct API to DB communication."
+    },
+    {
+      "id": "rule-111",
+      "name": "deny-api-srv-01-to-db-srv-07",
+      "consumer": "api-srv-01",
+      "provider": "db-srv-07",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct API to DB communication."
+    },
+    {
+      "id": "rule-112",
+      "name": "deny-api-srv-07-to-db-srv-05",
+      "consumer": "api-srv-07",
+      "provider": "db-srv-05",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct API to DB communication."
+    },
+    {
+      "id": "rule-113",
+      "name": "deny-db-srv-01-to-web-srv-01",
+      "consumer": "db-srv-01",
+      "provider": "web-srv-01",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct DB to WEB communication."
+    },
+    {
+      "id": "rule-114",
+      "name": "deny-db-srv-06-to-web-srv-03",
+      "consumer": "db-srv-06",
+      "provider": "web-srv-03",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct DB to WEB communication."
+    },
+    {
+      "id": "rule-115",
+      "name": "deny-db-srv-05-to-web-srv-03",
+      "consumer": "db-srv-05",
+      "provider": "web-srv-03",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct DB to WEB communication."
+    },
+    {
+      "id": "rule-116",
+      "name": "deny-db-srv-08-to-api-srv-05",
+      "consumer": "db-srv-08",
+      "provider": "api-srv-05",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct DB to API communication."
+    },
+    {
+      "id": "rule-117",
+      "name": "deny-db-srv-07-to-api-srv-05",
+      "consumer": "db-srv-07",
+      "provider": "api-srv-05",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct DB to API communication."
+    },
+    {
+      "id": "rule-118",
+      "name": "deny-db-srv-01-to-api-srv-01",
+      "consumer": "db-srv-01",
+      "provider": "api-srv-01",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct DB to API communication."
+    },
+    {
+      "id": "rule-119",
+      "name": "deny-file-srv-01-to-db-srv-03",
+      "consumer": "file-srv-01",
+      "provider": "db-srv-03",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct FILE to DB communication."
+    },
+    {
+      "id": "rule-120",
+      "name": "deny-file-srv-05-to-db-srv-01",
+      "consumer": "file-srv-05",
+      "provider": "db-srv-01",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct FILE to DB communication."
+    },
+    {
+      "id": "rule-121",
+      "name": "deny-file-srv-03-to-db-srv-03",
+      "consumer": "file-srv-03",
+      "provider": "db-srv-03",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct FILE to DB communication."
+    },
+    {
+      "id": "rule-122",
+      "name": "deny-app-srv-07-to-mgmt-srv-02",
+      "consumer": "app-srv-07",
+      "provider": "mgmt-srv-02",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct APP to MGMT communication."
+    },
+    {
+      "id": "rule-123",
+      "name": "deny-app-srv-01-to-mgmt-srv-03",
+      "consumer": "app-srv-01",
+      "provider": "mgmt-srv-03",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct APP to MGMT communication."
+    },
+    {
+      "id": "rule-124",
+      "name": "deny-app-srv-06-to-mgmt-srv-07",
+      "consumer": "app-srv-06",
+      "provider": "mgmt-srv-07",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct APP to MGMT communication."
+    },
+    {
+      "id": "rule-125",
+      "name": "deny-mon-srv-01-to-db-srv-06",
+      "consumer": "mon-srv-01",
+      "provider": "db-srv-06",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct MON to DB communication."
+    },
+    {
+      "id": "rule-126",
+      "name": "deny-mon-srv-02-to-db-srv-04",
+      "consumer": "mon-srv-02",
+      "provider": "db-srv-04",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct MON to DB communication."
+    },
+    {
+      "id": "rule-127",
+      "name": "deny-mon-srv-01-to-db-srv-06",
+      "consumer": "mon-srv-01",
+      "provider": "db-srv-06",
+      "protocol": "ANY",
+      "ports": [
+        "ANY"
+      ],
+      "action": "DENY",
+      "description": "Segmentation policy blocks direct MON to DB communication."
+    },
+    {
+      "id": "rule-128",
+      "name": "mgmt-srv-07-dns",
+      "consumer": "mgmt-srv-07",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-129",
+      "name": "file-srv-03-dns",
+      "consumer": "file-srv-03",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-130",
+      "name": "api-srv-01-dns",
+      "consumer": "api-srv-01",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-131",
+      "name": "mon-srv-02-dns",
+      "consumer": "mon-srv-02",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-132",
+      "name": "app-srv-02-dns",
+      "consumer": "app-srv-02",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-133",
+      "name": "app-srv-08-dns",
+      "consumer": "app-srv-08",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-134",
+      "name": "app-srv-03-dns",
+      "consumer": "app-srv-03",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-135",
+      "name": "app-srv-04-dns",
+      "consumer": "app-srv-04",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-136",
+      "name": "mgmt-srv-05-dns",
+      "consumer": "mgmt-srv-05",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-137",
+      "name": "web-srv-02-dns",
+      "consumer": "web-srv-02",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-138",
+      "name": "mon-srv-05-dns",
+      "consumer": "mon-srv-05",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-139",
+      "name": "db-srv-04-dns",
+      "consumer": "db-srv-04",
+      "provider": "dns-service",
+      "protocol": "UDP",
+      "ports": [
+        53
+      ],
+      "action": "ALLOW",
+      "description": "DNS resolution."
+    },
+    {
+      "id": "rule-140",
+      "name": "api-srv-01-ntp",
+      "consumer": "api-srv-01",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-141",
+      "name": "mon-srv-05-ntp",
+      "consumer": "mon-srv-05",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-142",
+      "name": "mgmt-srv-05-ntp",
+      "consumer": "mgmt-srv-05",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-143",
+      "name": "app-srv-08-ntp",
+      "consumer": "app-srv-08",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-144",
+      "name": "app-srv-10-ntp",
+      "consumer": "app-srv-10",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-145",
+      "name": "app-srv-03-ntp",
+      "consumer": "app-srv-03",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-146",
+      "name": "web-srv-07-ntp",
+      "consumer": "web-srv-07",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-147",
+      "name": "db-srv-07-ntp",
+      "consumer": "db-srv-07",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-148",
+      "name": "web-srv-03-ntp",
+      "consumer": "web-srv-03",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    },
+    {
+      "id": "rule-149",
+      "name": "api-srv-05-ntp",
+      "consumer": "api-srv-05",
+      "provider": "ntp-service",
+      "protocol": "UDP",
+      "ports": [
+        123
+      ],
+      "action": "ALLOW",
+      "description": "Time synchronisation."
+    }
+  ]
+}

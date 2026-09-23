@@ -1,0 +1,29 @@
+# Normalise everything to LF in the repository, and check out with native
+# endings. Without this, line endings depend on each contributor's local Git
+# configuration rather than on the project.
+* text=auto eol=lf
+
+# Windows batch files must keep CRLF. cmd.exe mis-parses labels and multi-line
+# blocks in a file with LF-only endings, so start.bat and stop.bat would break
+# for anyone who cloned the repository on a machine configured for LF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary assets: never transform these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+
+# Generated. Collapsed in diffs and excluded from language statistics so the
+# repository is reported as TypeScript rather than JSON.
+package-lock.json linguist-generated=true -diff
+
+# The bundled sample policy is data, not source.
+Rules/*.json linguist-language=JSON linguist-detectable=false
+src/data/*.json linguist-detectable=false
